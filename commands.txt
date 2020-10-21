@@ -1,0 +1,1 @@
+cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./tplates/allauth/ #recursive copy of allauth templates

@@ -10,6 +10,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: aqua;
+    z-index: -1;
+}
+
 /* --------------------------------------------------------------from Bulma and lessons */
 .icon {
     align-items: center;

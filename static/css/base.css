@@ -20,6 +20,11 @@ body {
     z-index: -1;
 }
 
+.logo-text {
+    text-transform:uppercase;
+    color:aqua;
+}
+
 /* --------------------------------------------------------------from Bulma and lessons */
 .icon {
     align-items: center;

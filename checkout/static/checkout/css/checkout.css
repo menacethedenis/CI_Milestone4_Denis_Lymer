@@ -4,6 +4,16 @@
     border: 1.5px solid black;
 }
 
+select,
+select option {
+    color:black;
+}
+
+select:invalid,
+select option[value=''] {
+    color:#aab7c4 !important;
+}
+
 .fieldset-label {
     position: relative;
     right: .75rem;

@@ -24,3 +24,5 @@ python3 manage.py createsuperuser
 herokudb
 herokudb@test.com
 herokudb20!
+
+admin1

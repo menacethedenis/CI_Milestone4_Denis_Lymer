@@ -16,3 +16,11 @@ python3 manage.py createsuperuser
 python3 manage.py shell
 
 pip3 freeze > requirements.txt
+
+databases: (order is important)
+python3 manage.py loaddata categories
+python3 manage.py loaddata products
+python3 manage.py createsuperuser
+herokudb
+herokudb@test.com
+herokudb20!

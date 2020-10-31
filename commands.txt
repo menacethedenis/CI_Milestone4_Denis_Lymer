@@ -26,3 +26,8 @@ herokudb@test.com
 herokudb20!
 
 admin1
+
+#show all problems via gitpod in the terminal:
+python3 -m flake8
+
+#ctrl+click will take to problem

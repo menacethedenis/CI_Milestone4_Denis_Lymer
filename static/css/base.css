@@ -25,6 +25,36 @@ body {
     color:aqua;
 }
 
+/*--------------------------------------------------------------- headers */
+.welcome-header {
+      text-shadow: 1.5px 1px #4e4d4d;
+}
+
+.info-header {
+      text-shadow: 1.5px 1px #4e4d4d;
+;
+}
+
+/*-------------------------------------------------------------- buttons */
+.view-button {
+    background-color: rgb(7, 207, 207);
+    border: 3px solid #070707;
+}
+
+.view-button:hover {
+    background:  rgb(55, 247, 247);
+}
+
+/*-------------------------------------------------------------- cards */
+.welcome-card {
+    width:50%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    border-color:#070707;
+    background-color:rgb(167, 252, 252);
+}
+
 /* --------------------------------------------------------------from Bulma and lessons */
 .icon {
     align-items: center;
@@ -41,6 +71,7 @@ body {
 
 .main-logo-link {
     width: fit-content;
+    margin-left: 40px;
 }
 
 .shop-now-button {
@@ -262,6 +293,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -284,6 +316,25 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 164px;
     }
+
+    .hr-headers {
+        padding-bottom: 2em;
+    }
+    #navtop {
+        padding-bottom: 2em;
+    }
+
+    .welcome-header {
+        padding-top: 10px;
+    }
+
+    .spacer {
+        padding-top: 1.5em;
+    }
+
+    .info-header {
+        padding-bottom: 5px;
+    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -302,6 +353,8 @@ input[name='q']::placeholder {
 
     .nav-link {
         padding: 0.15rem;
+        margin: 0;
+        text: center;
     }
 
     .nav-link i.fa-lg {
@@ -330,6 +383,29 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .hr-headers {
+        padding-bottom: .5em;
+    }
+    #navtop {
+        padding-bottom: .5em;
+    }
+
+    .welcome-header {
+        padding-top: 1em;
+    }
+
+    .info-header {
+        padding: 1.5em;
+    }
+
+    .spacer {
+        padding-top: .5em;
+    }
+
+    .view-button {
+        padding: 3em;
     }
 }
 /* -------------------------------------------------------------- endof from Bulma and lessons */

@@ -38,15 +38,10 @@
   <body>
     <header class="container-fluid fixed-top">
         <div id="navtop" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="font-header black-text my-0"><strong>Hit Record</strong></h2>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 px-2 py-lg-0">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
-                    <input type="text" class="form-control border border-black rounded-0" name="q" placeholder="Search this site">
+                    <input type="text" class="form-control border border-black rounded-2" name="q" placeholder="Search this site">
                     <div class="input-group-append">
                         <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                             <span class="icon">
@@ -56,6 +51,13 @@
                     </div>
                 </div>
             </form>
+            </div>
+            <div class="col-12 col-lg-1 my-auto py-1 py-lg-0 text-center">
+            </div>
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h1 class="font-header text-center black-text my-0"><strong>Hit Record</strong></h1>
+                </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -96,7 +98,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
+        <div class="row bg-white hr-headers">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

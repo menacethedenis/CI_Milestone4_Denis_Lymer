@@ -10,16 +10,25 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 font-header black-text">
-                New & Recent Releases
-            </h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 my-auto spacer">
             <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="view-button btn btn-lg rounded-0 text-uppercase py-3">View Now</a>
-                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="row card welcome-card text-center">
+        <div class="col-12 my-auto px-10 text-center card-body">
+            <h1 class="display-4 font-header black-text welcome-header">
+                Welcome to Hit Record
+            </h1>
+            <h3 class="font-header black-text px-3 info-header">
+                Your one-stop shop for all your audio needs
+            </h3>
+            <div class="col-12 my-auto text-center view-btn">
+                <h5>
+                    <a href="{% url 'products' %}" class="view-button btn btn-md rounded-0 text-uppercase py-3">View All Products Now</a>
+                </h5>
             </div>
         </div>
     </div>

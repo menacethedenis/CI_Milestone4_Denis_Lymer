@@ -28,10 +28,12 @@ body {
 /*--------------------------------------------------------------- headers */
 .welcome-header {
       text-shadow: 1.5px 1px #4e4d4d;
+      opacity:1;
 }
 
 .info-header {
-      text-shadow: 1.5px 1px #4e4d4d;
+      text-shadow: .5px .5px #4e4d4d;
+      opacity:1;
 ;
 }
 
@@ -39,6 +41,8 @@ body {
 .view-button {
     background-color: rgb(7, 207, 207);
     border: 3px solid #070707;
+    text-shadow: .5px .5px #4e4d4d;
+    opacity:1;
 }
 
 .view-button:hover {
@@ -48,11 +52,10 @@ body {
 /*-------------------------------------------------------------- cards */
 .welcome-card {
     width:50%;
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
     border-color:#070707;
     background-color:rgb(167, 252, 252);
+    opacity: .8;
+    margin-top: 20px;
 }
 
 /* --------------------------------------------------------------from Bulma and lessons */
@@ -337,7 +340,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -406,6 +409,10 @@ input[name='q']::placeholder {
 
     .view-button {
         padding: 3em;
+    }
+    .welcome-card {
+        margin-top: 2px;
+        margin-bottom:2em;
     }
 }
 /* -------------------------------------------------------------- endof from Bulma and lessons */

@@ -190,6 +190,8 @@ def all_turntables(request):
         'current_sorting': current_sorting,
     }
 
+    print(all_turntables)
+
     return render(request, 'products/turntables.html', context)
 
 

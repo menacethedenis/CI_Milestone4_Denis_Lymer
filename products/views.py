@@ -144,7 +144,7 @@ def delete_product(request, product_id):
 def all_turntables(request):
     """ A view to show all turntables including sorting and search queries """
 
-    turntable = Turntable.objects.all()
+    turntables = Turntable.objects.all()
     query = None
     categories = None
     sort = None
@@ -156,7 +156,7 @@ def all_turntables(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                turntable = turntable.annotate(lower_name=Lower('name'))
+                turntable = turntables.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
 
@@ -168,7 +168,7 @@ def all_turntables(request):
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            turntable = turntable.filter(category__name__in=categories)
+            turntable = turntables.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
@@ -184,7 +184,7 @@ def all_turntables(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'turntable': turntable,
+        'turntables': turntables,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,

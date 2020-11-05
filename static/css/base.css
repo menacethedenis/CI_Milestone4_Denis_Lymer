@@ -1,3 +1,4 @@
+/*-------------------------------------------------------------- General */
 html {
     height:100%;
 }
@@ -22,7 +23,22 @@ body {
 
 .logo-text {
     text-transform:uppercase;
-    color:aqua;
+    color:white;
+}
+
+.shadow-txt {
+    text-shadow: .35px .35px rgb(55, 247, 247);
+}
+
+/*--------------------------------------------------------------- details page */
+.detail-cont {
+    margin-top:5em;
+}
+
+.details-name {
+    font-size: 30px;
+    text-emphasis: bold;
+    text-shadow: .35px .35px rgb(226, 243, 243);
 }
 
 /*--------------------------------------------------------------- headers */
@@ -321,7 +337,7 @@ input[name='q']::placeholder {
     }
 
     .hr-headers {
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
     #navtop {
         padding-bottom: 2em;

@@ -1,44 +1,44 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link black-text mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mr-5" href="{% url 'products' %}?category=vinyl" id="vinyl-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="vinyl-link">
+            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=vinyl" id="vinyl-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="vinyl-link">
                 Vinyl
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="{% url 'products' %}?category=turntable" class="logo-font font-weight-bold nav-link black-text mr-5" id="turntable-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="turntable-link">
+            <a href="{% url 'products' %}?category=turntable" class=" shadow-txt logo-font font-weight-bold nav-link black-text px-3 mx-auto" id="turntable-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="turntable-link">
                 Turntables
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mr-5" href="{% url 'products' %}?category=headphones" id="headphone-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="headphone-link">
+            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=headphones" id="headphone-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="headphone-link">
                 Headphones
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mr-5" href="{% url 'products' %}?category=deals" id="bargains-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="bargains-link">
+            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=deals" id="bargains-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="bargains-link">
                 Bargain Basement
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link black-text" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="shadow-txt logo-font font-weight-bold nav-link black-text mx-auto px-3" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="shadow-txt dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="shadow-txt dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="shadow-txt dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="shadow-txt dropdown-item">All Products</a>
             </div>
         </li>
     </ul>

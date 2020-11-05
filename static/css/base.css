@@ -41,6 +41,17 @@ body {
     text-shadow: .35px .35px rgb(226, 243, 243);
 }
 
+.pro-dsc-font {
+    font-style: italic;
+}
+
+.details-card {
+    border-color:#070707;
+    background-color:rgb(167, 252, 252);
+    padding: 8px;
+    box-shadow: 2px 2px rgb(42, 112, 112);
+}
+
 /*--------------------------------------------------------------- headers */
 .welcome-header {
       text-shadow: 1.5px 1px #4e4d4d;
@@ -133,6 +144,7 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+    border-radius: 10px;
 }
 
 .bg-black {
@@ -429,6 +441,14 @@ input[name='q']::placeholder {
     .welcome-card {
         margin-top: 2px;
         margin-bottom:2em;
+    }
+}
+
+/* tablet and larger screen fix for product management display */
+@media (min-width: 992px)
+and (max-device-width: 1270px) {
+    .spacer {
+        padding-top: 7em;
     }
 }
 /* -------------------------------------------------------------- endof from Bulma and lessons */

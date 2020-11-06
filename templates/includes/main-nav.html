@@ -6,40 +6,49 @@
             </a>
         </li>
 
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=vinyl" id="vinyl-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="vinyl-link">
-                Vinyl
+        <li class="nav-item dropdown">
+            <a class="shadow-txt logo-font font-weight-bold nav-link black-text mx-auto px-3" href="#" id="all-music-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Music
             </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="{% url 'products' %}?category=turntable" class=" shadow-txt logo-font font-weight-bold nav-link black-text px-3 mx-auto" id="turntable-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="turntable-link">
-                Turntables
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=headphones" id="headphone-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="headphone-link">
-                Headphones
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=deals" id="bargains-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="bargains-link">
-                Bargain Basement
-            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-music-link">
+                <a href="{% url 'products' %}?category=compact_disc" class="shadow-txt dropdown-item">CDs</a>
+                <a href="{% url 'products' %}?category=vinyl_twelve,vinyl_seven" class="shadow-txt dropdown-item">Vinyl</a>
+                <a href="{% url 'products' %}?category=cassette" class="shadow-txt dropdown-item">Cassette</a>
+                <a href="{% url 'products' %}?category=digital_download" class="shadow-txt dropdown-item">Digital Download</a>
+                <a href="{% url 'products' %}?category=vinyl_twelve,vinyl_seven,compact_disc,cassette,digital_download" class="shadow-txt dropdown-item">All Music</a>
+            </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="shadow-txt logo-font font-weight-bold nav-link black-text mx-auto px-3" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+            <a class="shadow-txt logo-font font-weight-bold nav-link black-text mx-auto px-3" href="#" id="all-hardware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hardware
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="shadow-txt dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="shadow-txt dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="shadow-txt dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="shadow-txt dropdown-item">All Products</a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-hardware-link">
+                <a href="{% url 'products' %}?category=turntable" class="shadow-txt dropdown-item">Turntables</a>
+                <a href="{% url 'products' %}?category=headphones" class="shadow-txt dropdown-item">Headphones</a>
+                <a href="{% url 'products' %}?category=cd_players" class="shadow-txt dropdown-item">CD Players</a>
+                <a href="{% url 'products' %}?category=cables" class="shadow-txt dropdown-item">Cables & Accessories</a>
+                <a href="{% url 'products' %}?category=turntable,headphones,cd_players,cables" class="shadow-txt dropdown-item">All Hardware</a>
             </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="shadow-txt logo-font font-weight-bold nav-link black-text mx-auto px-3" href="#" id="all-clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clothing
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-clothing-link">
+                <a href="{% url 'products' %}?category=hats" class="shadow-txt dropdown-item">Hats</a>
+                <a href="{% url 'products' %}?category=hoodies" class="shadow-txt dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=tshirts" class="shadow-txt dropdown-item">T Shirts</a>
+                <a href="{% url 'products' %}?category=hats,hoodies,tshirts" class="shadow-txt dropdown-item">All Clothing</a>
+            </div>
+        </li>
+
+        
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link black-text mx-auto px-3 shadow-txt" href="{% url 'products' %}?category=new_arrivals" id="new-arrivals-link" aria-haspopup="true" aria-expanded="false" aria-labelledby="new-arrivals-link">
+                New Arrivals
+            </a>
         </li>
     </ul>
 </div>

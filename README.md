@@ -1,6 +1,8 @@
 # **Denis Lymer Milestone Project 4**
 ## **Code Institute - Full Stack Frameworks With Django Module**
 ### **Django Full-Stack Project - 'Hit Record'**
+"Welcome to Hit Record! The one-stop shop for all your music needs - tunes, tables, tees & more..."
+
 For my Milestone 4 project I decided to create an app I would find useful myself.
 I enjoy craft beer and thought a clean, streamlined app that allowed a user to record and edit relevant details 
 about the beers they have tried would be useful. Obviously such apps already exist, I have tried some of them,

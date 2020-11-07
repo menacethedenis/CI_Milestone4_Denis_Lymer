@@ -62,7 +62,7 @@ def adjust_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if size:
-        if quantity > 0:
+        if quantity in range(0, 999):
             bag[item_id]['items_by_size'][size] = quantity
             messages.success(request, f'Updated size {size.upper()} \
                 {product.name} quantity to \
@@ -74,7 +74,7 @@ def adjust_bag(request, item_id):
             messages.success(request, f'Removed size {size.upper()} \
                 {product.name} from your bag')
     else:
-        if quantity > 0:
+        if quantity in range(0, 999):
             bag[item_id] = quantity
             messages.success(request, f'Updated {product.name} quantity to \
                 {bag[item_id]}')

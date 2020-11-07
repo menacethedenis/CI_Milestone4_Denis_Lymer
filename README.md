@@ -81,25 +81,31 @@ I wrote the following user/admin stories to guide the project development:
 * 14. As a user I want to be able to login/logout of my account easily.
 
 #### **Admin**
-* 15. As an admin I want to 
-* 16. As an admin I want to 
-* 17. As an admin I want to 
-* 18. As an admin I want to 
-* 19. As an admin I want to 
-* 20. As an admin I want to 
+* 15. As an admin I want to be able to login from anywhere on the site.
+* 16. As an admin I want to be able to edit or delete items from the site.
+* 17. As an admin I want to be able to add new items to the site easily.
+* 18. As an admin I want to change the categories of products like New Arrivals or Clearance.
+* 19. As an admin I want to be able to view the registered site users.
+* 20. As an admin I want to be able to add, edit or delete other users.
 
 
 ### **Wire frames**
 
-I again used the Balsamiq desktop app to create my wireframes to use as reference points for the app.
-I focused on mobile first design, then tablet and finally desktop layout.
+The Balsamiq desktop app was used to draw up the wireframes for my website.
+I focused on mobile first design, then tablet and larger desktop layouts.
 
 <details>
-<summary>Mobile - Main Page</summary>
-<br>
+<summary>Mobile views (Click for images)</summary>
 
-![Mobile - Beer Tracker - Home page](https://user-images.githubusercontent.com/48594804/94488878-5a564180-01db-11eb-94fd-9d5b5e4a7aa4.png)
+<p align="center">
 
+![Home](media/wireframes/Mobile - Hit Record - Home page.png)
+</p>
+
+<p align="center">
+
+![Products](media/wireframes/Mobile - Hit Record - Products page.png)
+</p>
 </details>
 <details>
 <summary>Mobile - Add Page</summary>

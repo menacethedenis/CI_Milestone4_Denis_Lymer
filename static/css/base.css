@@ -57,6 +57,10 @@ a.category-badge > span.badge:hover {
     text-decoration: none;
 }
 
+.card-img-top {
+    margin: auto;
+}
+
 /*--------------------------------------------------------------- details page */
 .detail-cont {
     margin-top:5em;
@@ -371,6 +375,10 @@ input[name='q']::placeholder {
 
     .info-header {
         padding-bottom: 5px;
+    }
+
+    .card-img-top {
+        margin: auto;
     }
 }
 

@@ -99,75 +99,86 @@ I focused on mobile first design, then tablet and larger desktop layouts.
 
 <p align="center">
 
-![Home](media/wireframes/Mobile - Hit Record - Home page.png)
+![Home](media/wireframes/mobile_home.png)
 </p>
 
 <p align="center">
 
-![Products](media/wireframes/Mobile - Hit Record - Products page.png)
+![Products](media/wireframes/mobile_products.png)
+</p>
+
+<p align="center">
+
+![Product Details](media/wireframes/mobile_details.png)
+</p>
+
+<p align="center">
+
+![Shopping Cart](media/wireframes/mobile_cart.png)
+</p>
+
+<p align="center">
+
+![Secure Checkout](media/wireframes/mobile_checkout.png)
 </p>
 </details>
-<details>
-<summary>Mobile - Add Page</summary>
-<br>
-
-![Mobile - Beer Tracker - Add page](https://user-images.githubusercontent.com/48594804/94488874-59bdab00-01db-11eb-8bd0-642a90172eb9.png)
-
-</details>
-<details>
-<summary>Mobile - Edit Page</summary>
-<br>
-
-![Mobile - Beer Tracker - Edit page](https://user-images.githubusercontent.com/48594804/94488877-59bdab00-01db-11eb-83d9-68ee1af1a8d8.png)
-
-</details>
-
-<br>
 
 <details>
-<summary>Tablet - Main Page</summary>
-<br>
+<summary>Tablet views (Click for images)</summary>
 
-![Tablet - Beer Tracker - Home page](https://user-images.githubusercontent.com/48594804/94488884-5aeed800-01db-11eb-9702-32348686edab.png)
+<p align="center">
 
-</details>
-<details>
-<summary>Tablet - Add Page</summary>
-<br>
+![Home](media/wireframes/tablet_home.png)
+</p>
 
-![Tablet - Beer Tracker - Add page](https://user-images.githubusercontent.com/48594804/94488881-5a564180-01db-11eb-9e30-c33564557671.png)
+<p align="center">
 
-</details>
-<details>
-<summary>Tablet - Edit Page</summary>
-<br>
+![Products](media/wireframes/tablet_products.png)
+</p>
 
-![Tablet - Beer Tracker - Edit page](https://user-images.githubusercontent.com/48594804/94488882-5aeed800-01db-11eb-9d0b-4404d43f793e.png)
+<p align="center">
 
+![Product Details](media/wireframes/tablet_details.png)
+</p>
+
+<p align="center">
+
+![Shopping Cart](media/wireframes/tablet_cart.png)
+</p>
+
+<p align="center">
+
+![Secure Checkout](media/wireframes/tablet_checkout.png)
+</p>
 </details>
 
-<br>
-
 <details>
-<summary>Desktop - Main Page</summary>
-<br>
+<summary>Desktop views (Click for images)</summary>
 
-![Desktop - Beer Tracker - Home page](https://user-images.githubusercontent.com/48594804/94488873-59251480-01db-11eb-9d46-b1b30212b809.png)
+<p align="center">
 
-</details>
-<details>
-<summary>Desktop - Add Page</summary>
-<br>
+![Home](media/wireframes/desktop_home.png)
+</p>
 
-![Desktop - Beer Tracker - Add page](https://user-images.githubusercontent.com/48594804/94488870-588c7e00-01db-11eb-89a4-f27da0d0c7c4.png)
+<p align="center">
 
-</details>
-<details>
-<summary>Desktop - Edit Page</summary>
-<br>
+![Products](media/wireframes/desktop_products.png)
+</p>
 
-![Desktop - Beer Tracker - Edit page](https://user-images.githubusercontent.com/48594804/94488871-59251480-01db-11eb-8a8d-3ea517a4ab15.png)
+<p align="center">
 
+![Product Details](media/wireframes/desktop_details.png)
+</p>
+
+<p align="center">
+
+![Shopping Cart](media/wireframes/desktop_cart.png)
+</p>
+
+<p align="center">
+
+![Secure Checkout](media/wireframes/desktop_checkout.png)
+</p>
 </details>
 
 # **Features**

@@ -63,10 +63,31 @@ elements of these sites before deciding on what direction to take my own UX and 
 ### **User Stories**
 
 I wrote the following user/admin stories to guide the project development:
+
+#### **User**
 * 1. As a user I want to be able to purchase my favourite music in various formats.
 * 2. As a user I want to see new releases I may not be aware of.
-* 3. As a user I want to be able to edit or delete previous entries.
-* 4. As a user I want to be able to record an entry with the minimal amount of info if I am in a rush.
+* 3. As a user I want to be able to edit or delete items or quantities in a shopping bag.
+* 4. As a user I want to be able to save my user profile for ease of purchase in the future.
+* 5. As a user I want a secure checkout experience.
+* 6. As a user I want an easy to navigate site.
+* 7. As a user I want a good experience on different device sizes.
+* 8. As a user I want to see more info/details about a product if I want them.
+* 9. As a user I want to be able to see my previous order history.
+* 10. As a user I want to be able to edit or update my user settings and address information.
+* 11. As a user I want to be able to browse and/or purchase without having to register or save my personal details.
+* 12. As a user I want to easily view a running subtotal of my purchases.
+* 13. As a user I want to know if I qualify for free delivery or how much I need to spend to do so.
+* 14. As a user I want to be able to login/logout of my account easily.
+
+#### **Admin**
+* 15. As an admin I want to 
+* 16. As an admin I want to 
+* 17. As an admin I want to 
+* 18. As an admin I want to 
+* 19. As an admin I want to 
+* 20. As an admin I want to 
+
 
 ### **Wire frames**
 

@@ -1,23 +1,28 @@
 # **Denis Lymer Milestone Project 4**
 ## **Code Institute - Full Stack Frameworks With Django Module**
 ### **Django Full-Stack Project - 'Hit Record'**
-"Welcome to Hit Record! The one-stop shop for all your music needs - tunes, tables, tees & more..."
+#### "Welcome to Hit Record! The one-stop shop for all your music needs - tunes, tables, tees & more..."
 
-For my Milestone 4 project I decided to create an app I would find useful myself.
-I enjoy craft beer and thought a clean, streamlined app that allowed a user to record and edit relevant details 
-about the beers they have tried would be useful. Obviously such apps already exist, I have tried some of them,
-but I always found them too over-complicated, especially if you've sampled a few beers in one sitting...
-so I settled on developing a very user-friendly app that was easy to use and navigate. 
-I was impressed by the Materialize framework used in the Code Institute tutorials from this module,
-particularly the responsiveness, so I decided to use it in my own project to gain experience using it.
+I wanted to apply some of my working life experience and passions into my Milestone 4 project.
+Previously I have worked in a record store, been an audio engineer, a DJ and a professional musician
+amongst other things. I decided to create an online store combining some of these passions.
+I wanted it to sell music in various formats (vinyl, CD, digital etc..), the means to play and listen
+to the music (turntables, cd players, headphones and accessories) and merchandise items like hats and tshirts
+of artists and bands. I wanted it to be bright, streamlined and easy to navigate for users. And I wanted it to
+be intuitive for admins with easy to use CRUD functionality behind the scenes.
+
+I settled on calling it 'Hit Record' as it can have two meanings, both relevant to what I was trying to achieve.
+a Hit Record can be a well-selling album or single by a musical artist, and Hit Record can also refer to the 
+ability of hardware to record or dub audio by pressing or clicking the Record button. I felt this title neatly
+encapsulated the philosophy of the project.
 
 ## **Link to the website**
 
-https://beer-tracker-ci-ms3.herokuapp.com/
+https://hit-record.herokuapp.com/
 
 ## **Link to the github repository**
 
-https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer
+https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
 
 ## **Table of Contents**
 1. [**UX**](#ux)
@@ -51,15 +56,15 @@ https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer
 
 # **UX**
 
-Ease of use was the main goal of this project. I wanted to keep the CRUD functionality within as few clicks
-as possible. I also decided to keep the layout to 3 separate pages - Home/main, Add and Edit,
-and make navigation between them as simple and obvious as possible.
+I did a lot of research before beginning to code this project. I viewed and explored many online stores 
+that specialized in the products I wanted to sell on my own site. I kept note of my favourite aspects and 
+elements of these sites before deciding on what direction to take my own UX and writing my User Stories.
 
 ### **User Stories**
 
-I wrote the following user stories to keep in mind during development:
-* 1. As a user I want to be able to easily record details about beers I am drinking or have drank previously.
-* 2. As a user I want a streamlined app experience with no features more than one click away.
+I wrote the following user/admin stories to guide the project development:
+* 1. As a user I want to be able to purchase my favourite music in various formats.
+* 2. As a user I want to see new releases I may not be aware of.
 * 3. As a user I want to be able to edit or delete previous entries.
 * 4. As a user I want to be able to record an entry with the minimal amount of info if I am in a rush.
 

@@ -464,7 +464,7 @@ During final testing for the project i received an email notifying me that my AW
 This app is based heavily on the tutorials from the Code Institute Full Stack Frameworks With Django Module,
 particularly the Boutique Ado project videos.
 
-I also referenced Stack Overflow quite frequently when I was trying to resolve some issues but I did not use any code from here. 
+I also referenced Stack Overflow quite frequently when I was trying to resolve some issues but I did not use any code from there. 
 
 <br>
 The Code Institute tutors helped me greatly in resolving various bugs.

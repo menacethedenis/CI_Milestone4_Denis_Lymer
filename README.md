@@ -35,7 +35,7 @@ https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
     - [**Products page**](#products-page)
     - [**Product Details page**](#product-details-page)
     - [**Shopping Bag page**](#shopping-bag-page)
-    - [**Delete an Entry**](#delete-an-entry)
+    - [**Secure Checkout page**](#secure-checkout-page)
     - [**Features Left to Implement**](#features-left-to-implement)
 
 3. [**Database**](#database)
@@ -196,25 +196,25 @@ I focused on mobile first design, then tablet and larger desktop layouts.
  The bottom of the header features a notification regarding free delivery.
 
 * Feature 2: Welcome card - I opted to put the welcome message on a bootstrap card which is very slightly opaque so
-the main background image with the turntable is just about visible through it. I liked the effect this has visually and think it looks 
-very well on mobile devices as you scroll down. I toyed with placing a footer below the welcome card but I felt it didn't display 
-that well and lessened the effect of the turntable background image at the bottom of the screen so I removed it.
+ the main background image with the turntable is just about visible through it. I liked the effect this has visually and think it looks 
+ very well on mobile devices as you scroll down. I toyed with placing a footer below the welcome card but I felt it didn't display 
+ that well and lessened the effect of the turntable background image at the bottom of the screen so I removed it.
 
 * Feature 3: View all products button - The card contains a button linking to a new page displaying all the products 
-stocked on the site. I thought about maybe linking this to New Releases or a featured category but felt this was 
-a nice alternative to the specificity on offer via the search form and navbar menu options.
+ stocked on the site. I thought about maybe linking this to New Releases or a featured category but felt this was 
+ a nice alternative to the specificity on offer via the search form and navbar menu options.
 
 ### **Products page**
 
 * Feature 4: New page - When the search form is used or a nav menu item is clicked, the user is brought to the products page.
-This displays the products as results of the search or the chosen category or categories. Bootstrap rows and columns
-were used to display these evenly. 
+ This displays the products as results of the search or the chosen category or categories. Bootstrap rows and columns
+ were used to display these evenly. 
 
 * Feature 5: Category buttons - Above the displayed results, any relevant categories are displayed as buttons 
-and these can be navigated to individually if multiple category results are returned. 
+ and these can be navigated to individually if multiple category results are returned. 
 
 * Feature 6: Sort dropdown menu -There is also a sort function displayed as a dropdown menu allowing 
-the user to further manipulate the products displayed.
+ the user to further manipulate the products displayed.
 
 * Feature 7: Navigation buttons - There is a return to homepage button below the results and a 'back to top'
  arrow button at the bottom of the page, allowing for ease of user navigation.
@@ -222,28 +222,40 @@ the user to further manipulate the products displayed.
 ### **Product details page**
 
 * Feature 8: New page - When a product from the Products page is clicked, the user is brought to a new page displaying
-a larger image of the selected product and further product details; price rating, and description. If the user is an admin
-then edit and delete buttons will also display.
+ a larger image of the selected product and further product details; price rating, and description. If the user is an admin
+ then edit and delete buttons will also display.
 
 * Feature 9: Add to bag functionality - If the user decides they want to buy the product, they can select their required
  quantity with the increment/dedrement buttons, or by typing the number into the form (a number greater than 999 returns
  an error message and will not allow the user to proceed). They can then use the add to bag button below to add the item 
  and trigger a toast notification advising them of such.
 
- * Feature 10: Back to store button - if the user decides they dont want the product this button returns them to the 
+* Feature 10: Back to store button - if the user decides they dont want the product this button returns them to the 
  all products view.
 
 ### **Shopping Bag page**
-* Feature 9: Edit a beer entry form <details><p>This page is identical to the Add a beer page in terms of layout and structure. It is accessed by clicking the 'Edit' button beside an entry on the mainpage. Then it pulls the relevant data from the MongoDB Atlas database and displays them in the correct fields. All fields are fully editable and changes are commited to the database by clicking the 'Confirm Edit' button. This also returns the use to the mainpage so they can view their edited entry.</p>
-![edit](https://user-images.githubusercontent.com/48594804/94622716-960c0c80-02aa-11eb-9435-5da24563af50.PNG)
+* Feature 11: New Page - The Shopping Bag view can be reached by either clicking on the Secure Checkout button that is displayed
+ in the toast notification after a user adds something to their bag. Or by clicking the bag icon in the header. If an item
+ or items have been added to the bag, a running total will display under the header icon. The page displays the bag items
+ and allows the user to increment or decrement item quantities or to remove them from the bag altogether. Also displayed
+ are the quantities, sub-totals and delivery costs if any. The grand total is displayed in larger font below all this.
 
-</details>
+* Feature 12: Navigation buttons - The user can choose to return to the store or proceed to checkout via the navigation
+ buttons beneath the products in bag list.
 
-### **Delete an entry**
-* Feature 10: Delete an Entry <details><p>The delete function is available beside every entry on the main page. Once clicked it removes all data related to the entry from the MongoDB Atlas database and removes the entry from view on the app.</p>
-![delete](https://user-images.githubusercontent.com/48594804/94623138-70333780-02ab-11eb-92da-6d467a173417.png)
+### **Secure Checkout page**
+* Feature 13: New Page -  This page displays a form on the left prompting users to enter their details so they can complete
+ their order. This form is displayed using crispy forms and is linked to fully functional Stripe card processing in the
+ backend. Some of these fields are mandatory and a checkbox also offers the user the option to save their details to their
+ profile. On the right the user can see a summary of their order.
 
-</details>
+* Feature 14: Buttons - The user can choose to return to their bag or proceed to process their order via the navigation
+ buttons beneath the form. A spinning overlay will appear while payment processing is occuring.
+
+* Feature 15: Successful order - A successfully processed order assigns the order a confirmation number and 
+ brings the user to an order summary page where they can view all their details. This also triggers an automated
+ email to the users email address via Django. There is a return to homepage button at the foot of the page.
+
 
 ## **Features Left to Implement**
 

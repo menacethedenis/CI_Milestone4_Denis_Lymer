@@ -286,7 +286,8 @@ Early in this project I spent some time looking for a free-to-use image for my m
  rgb selector tool to pick complementary colours when styling the sites elements like cards or effects
  like button hover. I also used simple black and white to emphasise and make the striking colours stand out.
  Trying to keep with the aquamarine theme I styled my forms, inputs and buttons with rounded corners,
- giving them an almost submarine-like feel.
+ giving them an almost submarine-like feel. I selected Roboto from Google fonts to use thorughout the site
+ in the interests of uniformity and I have seen it used frequently on other webstores.
 
 Also, during my research I discovered that impulse shoppers respond well to the blue colour family
  so I was happy to stick with my colour theme. 
@@ -312,6 +313,12 @@ HTML5 was used for the general structuring and positioning on the project.
 
 ## **Bootstrap** - https://getbootstrap.com/
 Bootstrap was used for page layout, styling and function throughout the site.
+
+## **Font Awesome** - https://fontawesome.com/
+Font Awesome was used for the icons throughout the site.
+
+## **Google Fonts** - https://fonts.google.com/
+The Roboto font from Google Fonts was used throughout the site.
 
 ## **CSS3** - https://www.w3.org/Style/CSS/Overview.en.html
 CSS3 was used to style the project.

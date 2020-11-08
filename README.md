@@ -31,10 +31,10 @@ https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
 
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
-    - [**General**](#general)
-    - [**Main page**](#main-page)
-    - [**Add a beer page**](#add-a-beer-page)
-    - [**Edit a beer page**](#edit-a-beer-page)
+    - [**Home page**](#home-page)
+    - [**Products page**](#products-page)
+    - [**Product Details page**](#product-details-page)
+    - [**Shopping Bag page**](#shopping-bag-page)
     - [**Delete an Entry**](#delete-an-entry)
     - [**Features Left to Implement**](#features-left-to-implement)
 
@@ -185,56 +185,55 @@ I focused on mobile first design, then tablet and larger desktop layouts.
 
 ## **Existing Features**
 
-### **General**
+### **Home page**
 
-* Feature 1: Navbar <details><p>The Logo and links to the 'add beer' and 'home pages' are visible on larger and tablet size screens. 
-The links have a hover-over effect applied. They collapse into a hamburger button and switch from right to left of the screen on mobile devices. The nav pops in from the left of the screen when the hamburger is clicked.</p>
-![navbar](https://user-images.githubusercontent.com/48594804/94607282-9ea51880-0293-11eb-9be0-18c8d0530999.png)
-![navbar2](https://user-images.githubusercontent.com/48594804/94608379-4111cb80-0295-11eb-993e-4e7e2914f36e.PNG)
-![navbar3](https://user-images.githubusercontent.com/48594804/94608380-41aa6200-0295-11eb-8f64-f8aea2f91ee6.PNG)
-</details>
+* Feature 1: Header - The header section of the site contains a search bar on the top left, the title of the site in the middle
+ and the login and shopping cart icons. Any search returns the results in a new page. The title links to the homepage.
+ The login icon opens a dropdown menu which displays different options depending on wheter the user is registered,
+ logged in or out, or is a superuser/admin. The header also contains the navbar which is the heart of the site.
+ It displays the different product categories and each will dropdown to further options where applicable. When an 
+ option is clicked, a forloop in the backend will pull the relevant categories and the results display in a new page.
+ The bottom of the header features a notification regarding free delivery.
 
-* Feature 2: Footer <details><p>The footer has an image of glasses containing beer which repeats to fill the screen on larger and tablet sizes. It disappears on mobile screens via CSS media queries. The image is copyright free and sourced from google images.</p>
-![footer1](https://user-images.githubusercontent.com/48594804/94608885-f9d80a80-0295-11eb-9c23-c183084dc0a2.PNG)
-</details> 
+* Feature 2: Welcome card - I opted to put the welcome message on a bootstrap card which is very slightly opaque so
+the main background image with the turntable is just about visible through it. I liked the effect this has visually and think it looks 
+very well on mobile devices as you scroll down. I toyed with placing a footer below the welcome card but I felt it didn't display 
+that well and lessened the effect of the turntable background image at the bottom of the screen so I removed it.
 
-* Feature 3: Colour scheme / Design <details><p>To kickstart the overall design and layout of the site I used Materialize. It has very nice, professional looking layouts and colours. I picked the colours from the palette viewable on their website and chose beer themed hues like browns, yellows and oranges. i also made use of the Materialize buttons, effects and depth/shading effects</p>
-![colourscheme](https://user-images.githubusercontent.com/48594804/94609319-81257e00-0296-11eb-8e4a-9192cb8599a0.PNG)
-</details> 
+* Feature 3: View all products button - The card contains a button linking to a new page displaying all the products 
+stocked on the site. I thought about maybe linking this to New Releases or a featured category but felt this was 
+a nice alternative to the specificity on offer via the search form and navbar menu options.
 
-### **Main page**
+### **Products page**
 
-* Feature 4: Welcome card <details><p>This is a Materialize card with some depth and shading effects applied. It has a short welcome message and instructions on how to use the app.</p>
-![welcome](https://user-images.githubusercontent.com/48594804/94609993-80411c00-0297-11eb-8334-b49e64ca9364.PNG)
-</details> 
+* Feature 4: New page - When the search form is used or a nav menu item is clicked, the user is brought to the products page.
+This displays the products as results of the search or the chosen category or categories. Bootstrap rows and columns
+were used to display these evenly. 
 
-* Feature 5: 'Add a beer' button <details><p>This is a Materialize button with a pulse effect, tooltip and icon applied. As this button represents the core and main function of the app, I wanted it to be prominently positioned, to really stand out and to have its function easily identifiable by a user, fulfilling User Story 1.</p>
-![addbutton](https://user-images.githubusercontent.com/48594804/94610761-afa45880-0298-11eb-86a5-a9c4fcacaf20.gif)
+* Feature 5: Category buttons - Above the displayed results, any relevant categories are displayed as buttons 
+and these can be navigated to individually if multiple category results are returned. 
 
-</details> 
+* Feature 6: Sort dropdown menu -There is also a sort function displayed as a dropdown menu allowing 
+the user to further manipulate the products displayed.
 
-* Feature 6: List of entries <details><p>This is a Materialize list to display each entry as they are added by a user. The list items display the 'Beer' and 'Brewed by' data fields prominently. There is a collapsible body triggered by the arrow button to reveal the rest of the data fields per entry.
-These are 'Drank at' - to record the users location. 'On Date', 'Comments', 'Rating' and to acknowledge the times we are currently living in, I thought it would be a cool feature to add a 'Social Distancing Observed?' field signifying if the location the user was drinking in was practising social distancing. I opted for a switch on the 'add' and 'edit' pages which proved quite tricky to code in terms of writing and reading to the database and getting it displayed properly on the app after writing and/or editing but I think it was worth the effort.
-There are also 'Edit' and 'Delete' buttons to the left of every entry fulfilling User Story 3. These along with the arrow button have Materialize logos and tooltips denoting their functionality, fulfilling User Story 2.</p>
-![list](https://user-images.githubusercontent.com/48594804/94612336-e11e2380-029a-11eb-907e-a49cd4139b12.PNG)
+* Feature 7: Navigation buttons - There is a return to homepage button below the results and a 'back to top'
+ arrow button at the bottom of the page, allowing for ease of user navigation.
 
-</details>
+### **Product details page**
 
-### **Add a Beer page**
+* Feature 8: New page - When a product from the Products page is clicked, the user is brought to a new page displaying
+a larger image of the selected product and further product details; price rating, and description. If the user is an admin
+then edit and delete buttons will also display.
 
-* Feature 7: Home/Back button <details><p>This is a Materialize button that will return a user to the main page, I positioned it prominently in case they navigated here by mistake.</p>
-![addbuttonback](https://user-images.githubusercontent.com/48594804/94620760-087aed80-02a7-11eb-93c8-3743f2a1b678.PNG)
+* Feature 9: Add to bag functionality - If the user decides they want to buy the product, they can select their required
+ quantity with the increment/dedrement buttons, or by typing the number into the form (a number greater than 999 returns
+ an error message and will not allow the user to proceed). They can then use the add to bag button below to add the item 
+ and trigger a toast notification advising them of such.
 
-</details>
+ * Feature 10: Back to store button - if the user decides they dont want the product this button returns them to the 
+ all products view.
 
-* Feature 8: Add a beer entry form <details><p>This is a Materialize form with seven fields for data entry. The first field is for the 'Beer Name'. It is a text field with a max character length of 100. I made it mandatory so as to make it impossible for a user to save a completely blank entry. I left the other fields as optional as I figured that in some situations, a user may only want to record minimal data and go back and fill in more later. This fulfills User Story 4.</p>
-<br><p>'Brewery Name' and 'Drank at' are also text fields of max length 100. 'On Date' triggers the Materialize Datepicker which keeps all date entries uniform. 'Comments' is a text area with max length of 300 characters. Rating is a number field with a minimun value of zero and maximum value of 10. There are also increment and decrement arrows on the right of the field.</p>
-<br><p>Lastly is the switch for 'Social Distancing Observed'. As I mentioned earlier this was difficut to get right but I am happy with it and I believe it gives the app some current relevancy. At the bottom of the form is the submit button (titled 'Beer Me!') which when clicked, writes the data to the MongoDB Atlas database I set up. It also returns the user to the main page where their entry will be available to view.</p>
-![addform](https://user-images.githubusercontent.com/48594804/94621087-9a82f600-02a7-11eb-8503-569a87c3191e.PNG)
-
-</details>
-
-### **Edit a beer page**
+### **Shopping Bag page**
 * Feature 9: Edit a beer entry form <details><p>This page is identical to the Add a beer page in terms of layout and structure. It is accessed by clicking the 'Edit' button beside an entry on the mainpage. Then it pulls the relevant data from the MongoDB Atlas database and displays them in the correct fields. All fields are fully editable and changes are commited to the database by clicking the 'Confirm Edit' button. This also returns the use to the mainpage so they can view their edited entry.</p>
 ![edit](https://user-images.githubusercontent.com/48594804/94622716-960c0c80-02aa-11eb-9435-5da24563af50.PNG)
 

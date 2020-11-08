@@ -454,6 +454,10 @@ I would have loved to have far more items on the site but I could not find a sui
  enough so you can get a feel of what I was going for, and indeed want to take this project in the future.
 <br>
 
+During final testing for the project i received an email notifying me that my AWS bucket was approaching 
+ its monthly free use limit for adding files. It should be fine but if there is any issue at all if you are looking at adding products
+ please let me know and I will pay for the usage straight away.
+
 # **Credits**
 ## **Content**
 

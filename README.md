@@ -36,9 +36,10 @@ https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
     - [**Product Details page**](#product-details-page)
     - [**Shopping Bag page**](#shopping-bag-page)
     - [**Secure Checkout page**](#secure-checkout-page)
+    - [**User Registration page**](#user-registration-page)
     - [**Features Left to Implement**](#features-left-to-implement)
 
-3. [**Database**](#database)
+3. [**Design and Styling**](#design-and-styling)
 
 4. [**Testing**](#testing)
 
@@ -256,78 +257,47 @@ I focused on mobile first design, then tablet and larger desktop layouts.
  brings the user to an order summary page where they can view all their details. This also triggers an automated
  email to the users email address via Django. There is a return to homepage button at the foot of the page.
 
+### **User Registration page**
+
+* Feature 16: Allauth - The 3rd party package Allauth was imported via PIP and controls the user registration functionality.
+ Users can do everything they would expect from a professional site regarding account management
+ such as updating and editing their profile details and information.
 
 ## **Features Left to Implement**
 
-* I would like to add a search page/functionality so a user can browse their entries if their lists get very long.
+* I would like to add functionality allowing a user to connect or register to Hit Record via their social media accounts.
+ |This was high on my list of additional features to add but sadly I could not get to it before my submission deadline.
 
-* It might be useful to add beer style categories for larger lists, so they can be sorted more easily.
+* More categories and product ranges will be added when time allows.
 
-* Adding API functionality that connects the user to larger beer databases so they can compare their reviews would be a great feature. At the moment I cannot find a reliable one that does not charge a fee for usage.
+* I would like to add API functionality that pulls review scores for products from respected databases
+ and displays them in the product details. I investigated this but could not find a free database that
+ would have suited this purpose.
 
-# **Database**
-I wired my app up to a MongoDB Atlas database. I created 2 collections but ended up using only 1 - Ratings.
+* I would like to add audio or video snippets to certain music products.
 
-<details><summary>Database Screenshot</summary>
+# **Design and Styling**
+Early in this project I spent some time looking for a free-to-use image for my main page background.
+ I hadn't really finalized a colour scheme for the site, just had some pages bookmarked that I liked
+ and might use as reference. But when I found the turntable image with its striking aquamarine colour
+ I knew straight away that this would be the colour I would base the site's visual styling on. I used the
+ rgb selector tool to pick complementary colours when styling the sites elements like cards or effects
+ like button hover. I also used simple black and white to emphasise and make the striking colours stand out.
+ Trying to keep with the aquamarine theme I styled my forms, inputs and buttons with rounded corners,
+ giving them an almost submarine-like feel.
 
-![database](https://user-images.githubusercontent.com/48594804/94627405-572f8400-02b5-11eb-92d5-af7e10dc0df9.PNG)
-</details>
+Also, during my research I discovered that impulse shoppers respond well to the blue colour family
+ so I was happy to stick with my colour theme. 
+ https://medium.com/crobox/how-color-affects-shopping-habits-36141daf4c49
+
 
 # **Testing**
-I conducted extensive manual testing as I was coding this project. I documented the testing in an A4 notepad and have transcribed it here by date for reference.
+I conducted extensive manual testing as I was coding this project. 
+ I spent many years as a manual regression tester for Hewlett-Packard and got into the habit
+ of writing everything down in an A4 notepad. I stuck with that process for this project 
+ and have transcribed my notes by date for reference into a seperate file.
 
-<details>
-<summary>10/9/20</summary>
-After setting up my Gitpod workspace, I created app.py and base.html files and pushed to GitHub to ensure changes were committing successfully. No issues.
-</details>
-<details>
-<summary>17/9/20</summary>
-I setup a basic Flask app, requirements.txt and Procfile. I was able to successfully run the app with Python via the Terminal.
-I then created a Heroku app on the Heroku website and linked it to my GitHub repository. I was able to successfuly view my app in the browser.
-</details>
-<details>
-<summary>18/9/20</summary>
-An error in my code prevented my Flask app from running. After careful examination this turned out to be a syntax error in my app.py file which was easily fixed.
-</details>
-<details>
-<summary>22/9/20</summary>
-The app is taking shape now and my basic pages are setup. It took some time to get them to connect and write to the MongoDB Atlas database. Again I had some syntax errors that I could fix no problem. Tested successfully writing and editing an entry to the database. No issues.
-</details>
-<details>
-<summary>23/9/20</summary>
-Setup all pagelinks and interconnectivity. Thoroughly tested in the browser to ensure all navigation worked as expected. Delete functionality was not clearing all entries from MongoDB Atlas database. There was a problem with my routing that I had to consult the Code Institute tutor support team on. I recoded this successfully and it is now working fine.
-<br> Created an env.py file to hide my MongoDB password. Setup GitIgnore file to ensure it does not get pushed to my repository. Also created the key on Heroku in the Config Vars section. Tested once complete and app works as expected on localhost but not on Heroku. Fixed by relinking my Github repository on the Heroku website. env.py file is not being pushed to Git repository.
-</details>
-<details>
-<summary>24/9/20</summary>
-<br> Made large amounts of code and style changes today. Ran into some issues with my app/database relationship but was able to resolve without need for tutor support. I regularly checked localhost to ensure expected behaviour and made good use of Chrome Developer Tools to help solve positioning problems. At end of day checked Heroku app and all working as expected.
-</details>
-<details>
-<summary>25/9/20</summary>
-<br> Much the same as yesterday, large amount of code and CSS changes today. Any issues were resolved without much problem. Checked all code in validators to ensure I wasn't missing anything. Some stray tags detected which I removed and my Jinga code is showing as an error in the HTML validator but as far as I know this is normal.
-</details>
-<details>
-<summary>26/9/20</summary>
-<br> Happy with core code so today thoroughly checked all functionality several times and all links and buttons several times. No issues.
-</details>
-<details>
-<summary>28/9/20</summary>
-Bug detected when viewing the app on mobile device running Chrome for Android. The Navbar logo is popping out of the navbar into the body element. Was several hours trying to resolve myself and with Code Institute Tutors. This unfortuantely is unresolved. See 'Known Bugs' section below for further details.
-</details>
-<details>
-<summary>29/9/20</summary>
-One final pass of code through validators and thorough testing of all app functionality before submission. No issues apart from known display issue caught yesterday.
-</details>
-
-## **Known Bugs**
-When testing the app on my own mobile device I encountered a display issue with the logo in the navbar. It is partially popping out into the body element. I tried to resolve this using CSS media queries. If the app is viewed and resized in Chrome Developer Tools it can be observed that the media queries work and the issue is fixed. However despite saving and commitiing the changes to GitHub and Heroku, the issue is still observable on the mobile device.
-<br> I was several hours online with the Code Institute tutors trying to resolve this. Four different tutors looked at the issue with me but a resolution was not found. The most likely cause is a bug with Materialize itself when interacting with Chrome. I was told by the tutors to log it as a bug in my documentation and explain it for the assessor.
-
-<details><summary>Bug Screenshot</summary>
-
-![bugscreenshot](https://user-images.githubusercontent.com/48594804/94626660-73cabc80-02b3-11eb-914d-2489dc597e77.PNG)
-</details>
-
+The File can be viewed at: [TESTS.md](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer/blob/587dcd379a7a99ac87e2ff9ca35cfa021d91f56c/TESTS.md)
 
 # **Technologies Used**
 
@@ -436,3 +406,8 @@ I would like to thank the tutors at the Code Institute and my mentor Spencer Bar
 <br>
 
 Thanks also to the Code Institute student care team for keeping me on track, checking in and always being so understanding, empathetic and helpful.
+<div align="right">
+
+[ Back to Top :arrow_up:](#table-of-contents)
+
+</div>

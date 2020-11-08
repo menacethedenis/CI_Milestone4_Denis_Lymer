@@ -479,7 +479,7 @@ bestbuy.com, evilgreed.net and discogs.com
 I would like to thank the tutors at the Code Institute and my mentor Spencer Barriball for their outstanding support, patience, advice and encouragement.
 <br>
 
-Thanks also to the Code Institute student care team, particularly Lucy Rush for keeping me on track, 
+Thanks also to the Code Institute student care team, particularly Lucy Rush, for keeping me on track, 
 checking in and always being so understanding, empathetic and helpful.
 <br>
 

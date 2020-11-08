@@ -1,5 +1,6 @@
 # Testing records for Milestone4 Project
-
+## All testing conducted manually
+### Click on dates below to view details
 <details>
 <summary>20/10/20</summary>
 After setting up my Gitpod workspace, I created app.py and base.html files and pushed to GitHub to ensure changes were committing successfully. No issues.

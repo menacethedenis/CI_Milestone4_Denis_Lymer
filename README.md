@@ -41,9 +41,9 @@ https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
 
 3. [**Design and Styling**](#design-and-styling)
 
-4. [**Testing**](#testing)
+4. [**Project Security**](#project-security)
 
-5. [**Known Bugs**](#known-bugs)
+5. [**Testing**](#testing)
 
 6. [**Technologies Used**](#technologies-used)
 
@@ -51,7 +51,9 @@ https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
     - [**Heroku Deployment**](#heroku-deployment)
     - [**Local Deployment**](#local-deployment)
 
-8. [**Credits**](#credits)
+8. [**Notes For Assessor**](#notes-for-assessor)
+
+9. [**Credits**](#credits)
     - [**Content**](#content)
     - [**Acknowledgements**](#acknowledgements)
 
@@ -288,8 +290,12 @@ Early in this project I spent some time looking for a free-to-use image for my m
 
 Also, during my research I discovered that impulse shoppers respond well to the blue colour family
  so I was happy to stick with my colour theme. 
- https://medium.com/crobox/how-color-affects-shopping-habits-36141daf4c49
+ [How color affects shopping habits.](https://medium.com/crobox/how-color-affects-shopping-habits-36141daf4c49)
 
+# **Project Security**
+I was very careful to ensure this project's Github site did not contain any sensitive information
+ such as passwords or URI keys. These have all been hidden via Environmental Variables in my Gitpod Workspaces
+ and as Config Vars on Heroku.
 
 # **Testing**
 I conducted extensive manual testing as I was coding this project. 
@@ -297,48 +303,71 @@ I conducted extensive manual testing as I was coding this project.
  of writing everything down in an A4 notepad. I stuck with that process for this project 
  and have transcribed my notes by date for reference into a seperate file.
 
-The File can be viewed at: [TESTS.md](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer/blob/587dcd379a7a99ac87e2ff9ca35cfa021d91f56c/TESTS.md)
+The file can be viewed at: [TESTS.md](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer/blob/587dcd379a7a99ac87e2ff9ca35cfa021d91f56c/TESTS.md)
 
 # **Technologies Used**
 
-## **Materialize** - https://materializecss.com/
-Materialize was used as the Framework for the app and I incorporated many of its features, as detailed above. I really enjoyed getting to know it and it was a nice change from Bootstrap which I used for my 2 previous Milestone Projects.
-
 ## **HTML5** - https://www.w3.org/TR/html52/
-HTML5 was used for the general structuring and positioning on the app.
+HTML5 was used for the general structuring and positioning on the project.
+
+## **Bootstrap** - https://getbootstrap.com/
+Bootstrap was used for page layout, styling and function throughout the site.
 
 ## **CSS3** - https://www.w3.org/Style/CSS/Overview.en.html
-CSS3 was used to style the website.
+CSS3 was used to style the project.
 
 ## **Python3** - https://www.python.org/
 Python was used to run the application.
 
+## **Django** - https://www.djangoproject.com/
+Django was used as the Python framework for the project.
+
 ## **Javascript** - https://www.javascript.com/
-Javascript is used in conjunction with the Materialize framework to operate the forms and data entry functionality.
+Javascript is used in conjunction with Python & Django to operate the forms and data entry functionality.
 
 ## **JQuery** - https://jquery.com/
-JQuery was used to deploy javascript functionality with Materialize.
-
-## **Flask** - https://flask.palletsprojects.com/en/1.1.x/
-Flask was used to dynamically generate pages, links and other content within the app.
-
-## **MongoDB Atlas** - https://www.mongodb.com/
-MongoDB was used as the database to read, write, edit and delete data from the app interface.
-
-## **Pymongo** - https://pypi.org/project/pymongo/
-Pymongo was used to handle the interaction between Python and MongoDB.
+JQuery was used to deploy javascript functionality throughout the site.
 
 ## **Jinja** - https://jinja.palletsprojects.com/en/2.11.x/
-Jinja was used as a templating language for Python. I really enjoyed learning this and found it incredibly useful.
+Jinja was used as a templating language for Python.
+
+## **JSON** - https://www.json.org/json-en.html
+JSON was used for the fixture files containing the categories and product
+information for the website's items.
 
 ## **Balsamiq** - https://balsamiq.com/wireframes/
-Balsamiq was used to create my wireframes at the start of this project.
+Balsamiq was used to design my wireframes for mobile, tablet and desktop layouts.
 
 ## **Heroku** - https://www.heroku.com/
 Heroku was used to host the final deployed version of the app.
 
+## **Heroku postgres** - https://www.heroku.com/postgres
+Heroku postgres was used as the SQL database service for the project.
+
+## **Amazon S3** - https://s3.console.aws.amazon.com/s3/home?region=us-west-1
+Amazon Web services S3 storage service was used to store the projects static files.
+
+## **Boto3** - https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+Boto3 was used to connect Django to Amazon Web Services to allow automatic file transfer.
+
+## **Allauth** - https://django-allauth.readthedocs.io/en/latest/
+Allauth was used to handle the authentication, registration and account management for users.
+
+## **Crispy Forms** - https://django-crispy-forms.readthedocs.io/en/latest/
+Crispy Forms were used the render the user details and payment forms.
+
+## **Gunicorn** - https://gunicorn.org/
+Gunicorn was used as the Python WSGI server.
+
+## **Pillow** - https://pillow.readthedocs.io/en/stable/
+Pillow was used to add image processing capabilities to the Python interpretor.
+
+## **Stripe** - https://stripe.com/en-gb-us
+Stripe was used as the e-commerce payment processing platform for the project.
+
 ## **Git, GitPod & GitHub** - https://github.com/
-Gitpod was used as the development environment. Git and Github were used for version control. My repository was linked to my Heroku app for synchronised commit pushes.
+Gitpod was used as the development environment. Git and Github were used for version control. 
+My repository was linked to my Heroku app for synchronised commit pushes.
 
 ## **HTML validator** - https://validator.w3.org/ 
 This was used to ensure the code on my HTML pages were error free.
@@ -346,15 +375,20 @@ This was used to ensure the code on my HTML pages were error free.
 ## **CSS validator** - https://jigsaw.w3.org/css-validator/
 This was used to ensure my CSS stylesheet was error free.
 
-## **CSS Autoprefixer** - https://autoprefixer.github.io/
-This was used to check for webkit styles when attempting to rectify a known bug.
 
 # **Deployment**
- This project was fully developed in [GitPod](https://www.gitpod.io/). To start off I used the [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) available on [GitHub](https://github.com/). 
- As I was building the project I regularly committed my code to my [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer) by pushing it from my local Git repository via command prompts from the GitPod terminal.
+ This project was fully developed in [GitPod](https://www.gitpod.io/). 
+ To start off I used the [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) available on [GitHub](https://github.com/). 
+ As I was building the project I regularly committed my code to my [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer) 
+ by pushing it from my local Git repository via command prompts from the GitPod terminal.
  <br>
 
- The app is deployed on [Heroku](https://beer-tracker-ci-ms3.herokuapp.com/). This was connected directly to my [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer) to allow synchronised pushes of any commits I made.
+ The project is deployed on [Heroku](https://git.heroku.com/hit-record.git). This was connected directly to my 
+ [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer) to allow synchronised pushes of any commits I made.
+ <br>
+
+ The project's static files are stored in a bucket on [Amazon Web Services](https://s3.console.aws.amazon.com/s3/buckets/hit-record?region=us-west-1&tab=objects#). 
+ This is linked via Django to the automatic builds that occur on Heroku, whenever the Git Push command is used on the project.
 
 ## **Heroku Deployment**
 Deployment to [Heroku](https://beer-tracker-ci-ms3.herokuapp.com/) from the [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer) was completed using the following steps:
@@ -364,7 +398,7 @@ Deployment to [Heroku](https://beer-tracker-ci-ms3.herokuapp.com/) from the [Git
 4. The app will now be created and will open on the **Deploy** tab. Under the  **Deployment Method** select **GitHub**.
 5. Login using GitHub username and password and select the relevant Repository in the search box. Once found, click **Connect** and under **Manual Deploy** select the relevant branch and click **Deploy Branch**. The app will now deploy based on the latest commit pushed to the Repository.
 6. Click the **Settings** tab, scroll down to the **Config Vars** section and click the **Reveal Config Vars** button.
-7. Click the Add button and create key:value pairs for IP, PORT and any URIs or Secret Keys required by your project.
+7. Click the Add button and create key:value pairs for any URIs or Secret Keys required by your project.
 8. Scroll back to the top of the page, click the **More** button and select **Restart all dynos**.
 9. Finally, scroll down to the **Domains** section and click the link to your app to open the deployed app in the browser. 
 
@@ -372,14 +406,13 @@ Deployment to [Heroku](https://beer-tracker-ci-ms3.herokuapp.com/) from the [Git
 The Technologies used in this project are listed above. To deploy locally you will need the following minimum requirements:
 *Local or browser based development environment.
 *Git - local and online GitHub repository.
-*Python and Flask installed in your development environment.
-*MongoDB Atlas - account, cluster and collection.
+*Python and Django installed in your development environment.
 
-1. Navigate to this projects [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer), click the green **Clone or download** button and copy the clone URL.
+1. Navigate to this projects [GitHub Repository](https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer), click the green **Clone or download** button and copy the clone URL.
 2. In the terminal of your development environment, navigate to or create the folder you would like to clone the repository files into.
 3. Use the **git clone** command combined with the clone URL and press enter to clone the files to your selected folder.
 ```
-git clone https://github.com/menacethedenis/CI_Milestone_3_Denis_Lymer
+git clone https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
 ```
 4. In the terminal install the required modules using the pip3 install command.
 ```
@@ -387,27 +420,65 @@ pip3 install -r requirements.txt
 ```
 5. Once the terminal has confirmed all installs have been successful run the app on an Open Port with the following command.
 ```
-python3 app.py
+python3 manage.py runserver
 ```
+
+# **Notes For Assessor**
+## **I will remove this section after project has been graded**
+I have created a superuser so you can view the admin side of the site. The details are:
+ Username: admin1
+ Password: 5kUWVtRVeQdeQuz
+<br>
+
+I noticed in the requirements section of the project outline on Code Institute website that it
+ says to create 2 custom models. I did this by creating models for Turntables & Headphones along 
+ with all the requisite views, urls, categories etc.. 
+ If you roll the project back to commit fe875c2e38ab747c8b550da969abd376935ea153 they can be viewed.
+ I had the products added to the website and all was functioning fine until I realised the items created
+ with these models were not being returned by the website search function. I checked this with Code Institute
+ support and they advised that it would be too complex to fix this and I should proceed by reverting to
+ just using the Product model to create website items, which I did. They confirmed that my 2 custom models would be
+ covered by Order and OrderLineItems. I was reluctant to do this after spending so much time on the models
+ but I was so tight for time with my final deadline date that I didn't want to push on against their advice.
+<br>
+
+I would have loved to have far more items on the site but I could not find a suitable free database or dump
+ that I could use. I had to add each item manually via the JSON fixtures and source images online. Again, time was against me here. I think there's 
+ enough so you can get a feel of what I was going for, and indeed want to take this project in the future.
+<br>
 
 # **Credits**
 ## **Content**
 
-This app is based heavily on the lessons from the Code Institute Data Centric Development Module. I also referenced several threads on Stack Overflow when I was trying to resolve some issues but I did not use anyone elses code. 
+This app is based heavily on the tutorials from the Code Institute Full Stack Frameworks With Django Module,
+particularly the Boutique Ado project videos.
 
-<br>The Code Institute tutors were also very helpful in assisting some bug resolution, particularly the known display bug detailed above.
+I also referenced Stack Overflow quite frequently when I was trying to resolve some issues but I did not use any code from here. 
 
-<br>Before starting this project I had a look at some other students projects that had been posted on the Code Institute Slack channels, to get a feel for what others were doing and to hopefully ensure my idea hadn't already been taken. This was purely research, I did not use any other student's code.
+<br>
+The Code Institute tutors helped me greatly in resolving various bugs.
 
-<br>The image used in the footer was sourced via google images and is open-source.
+<br>
+Before starting this project I reviewed some other student's projects on the Code Institute
+Slack channels and Github. No code was reused, I was just trying to get a feel of what others were doing and
+the complexity expected.
+
+<br>
+The turntable image used on the main page background was sourced via google images and is open-source.
+The images for the product items were also sourced via google images and the websites: 
+bestbuy.com, evilgreed.net and discogs.com
 
 ## **Acknowledgements**
 I would like to thank the tutors at the Code Institute and my mentor Spencer Barriball for their outstanding support, patience, advice and encouragement.
 <br>
 
-Thanks also to the Code Institute student care team for keeping me on track, checking in and always being so understanding, empathetic and helpful.
-<div align="right">
+Thanks also to the Code Institute student care team, particularly Lucy Rush for keeping me on track, 
+checking in and always being so understanding, empathetic and helpful.
+<br>
 
-[ Back to Top :arrow_up:](#table-of-contents)
+Huge thanks also go to my wife for her unending love, patience and support on my back to education journey and career change
+over the last few years. I couldn't have done it without her.
+<br>
 
-</div>
+Special mention to my beloved cats Chairman Meow, Luna, BC and Cat Stevens for keeping my lap warm and
+reminding me that life doesn't always have to be so stressful.

@@ -1,48 +1,106 @@
 # Testing records for Milestone4 Project
-## All testing conducted manually
-### Click on dates below to view details
+## All testing was conducted manually and is documented below
+<hr>
+
+## Testing overview
+My testing for this project is divided into two parts. First as I was coding/building the project,
+I tested each new feature or function as I was going by using the tools available to me via Gitpod.
+The current build of the website was almost always open on the localhost open port 8000, initiated 
+by the entering the following command in the project terminal:
+```
+python3 manage.py runserver
+```
+
+Django in general has excellent error debugging functionality. If an error occurs a very detailed description
+of why it happened and where the error is coming from will appear in etiher the terminal or the browser.
+This makes life so much easier when trying to fix issues.
+
+I also kept a close eye on the Gitpod 'Problems' tab, which was excellent for flagging basic syntax and indentation 
+errors across all the languages I was using. It doesnt like Jinja very much but otherwise is very helpful. I much prefer 
+to tidy these small, not neccessarily code-breaking, errors up as I am coding, rather than leave it all to take care of in one big lump.
+
+Another very powerful tool which helped me greatly was Flake8. This was vital for ensuring the quality of code in 
+my project adhered to industry standards. I could view all current errors by entering the following command in
+the terminal:
+```
+python3 -m flake8
+```
+This produced a list of errors in the terminal and by holding the Ctrl keyboard button and clicking on one, Gitpod
+would navigate me directly to the exact line of the error. A very useful feature.
+<br>
+
+Secondly, once the project was finished, I manually tested the site functionality and robustness by using 
+my User/Admin Stories as guidelines. My previous testing experience served me well here as I did my best to break the site!
+<hr>
+
+### Click on dates below to view details of daily testing during project coding
 <details>
 <summary>20/10/20</summary>
-After setting up my Gitpod workspace, I created app.py and base.html files and pushed to GitHub to ensure changes were committing successfully. No issues.
+After generating a new Git repository from the Code Institute template, I setup my Gitpod workspace.
+I created a manage.py file, installed Django and pushed to GitHub to ensure commits were happening 
+successfully. No issues.
 </details>
 <details>
-<summary>17/9/20</summary>
-I setup a basic Flask app, requirements.txt and Procfile. I was able to successfully run the app with Python via the Terminal.
-I then created a Heroku app on the Heroku website and linked it to my GitHub repository. I was able to successfuly view my app in the browser.
+<summary>21/10/20</summary>
+Much of today was spent setting up Allauth to deal with site user management and registration functionality.
+Some minor syntax issues were throwing errors as I was testing user registration in the browser but these were
+easily adjusted. I setup my base.hmtl file, Home app and some templates, relationally linked with Jinja and was able to 
+successfully view them in the browser.
 </details>
 <details>
-<summary>18/9/20</summary>
-An error in my code prevented my Flask app from running. After careful examination this turned out to be a syntax error in my app.py file which was easily fixed.
+<summary>22/10/20</summary>
+Updated headers and Jinja templating. Headers were displaying poorly in browser so adjusted via HTML styles and CSS.
 </details>
 <details>
-<summary>22/9/20</summary>
-The app is taking shape now and my basic pages are setup. It took some time to get them to connect and write to the MongoDB Atlas database. Again I had some syntax errors that I could fix no problem. Tested successfully writing and editing an entry to the database. No issues.
+<summary>23/10/20</summary>
+Bulk upload of products and categories from fixtures file was continuously failing. Eventually realised I had accidentally transferred
+the same data from the JSON formatter for my products to both files. Updated the Categories file with the correct code and upload was successful.
+Added nav bars to my mainpage and mobile headers. Tested views and dropdown functionality in the browser. Some slight display issues remedied via
+CSS and HTML styles. Also fixed some linter issues flagged in Gitpod. Flake8 does not seem to like Jinja and is flagging problems in my HTML
+templates as I have no doctype specified on Line 1. I checked this with Code Institute tutor support and they told me to ignore it.
 </details>
 <details>
-<summary>23/9/20</summary>
-Setup all pagelinks and interconnectivity. Thoroughly tested in the browser to ensure all navigation worked as expected. Delete functionality was not clearing all entries from MongoDB Atlas database. There was a problem with my routing that I had to consult the Code Institute tutor support team on. I recoded this successfully and it is now working fine.
-<br> Created an env.py file to hide my MongoDB password. Setup GitIgnore file to ensure it does not get pushed to my repository. Also created the key on Heroku in the Config Vars section. Tested once complete and app works as expected on localhost but not on Heroku. Fixed by relinking my Github repository on the Heroku website. env.py file is not being pushed to Git repository.
+<summary>24/10/20</summary>
+Today I built my Products and Product Details pages. Took quite some time to get these linking correctly. Had to refer to Code Institute tutorials
+several times. All is working as expected now and basic details and images are displaying in the browser.
 </details>
 <details>
-<summary>24/9/20</summary>
-<br> Made large amounts of code and style changes today. Ran into some issues with my app/database relationship but was able to resolve without need for tutor support. I regularly checked localhost to ensure expected behaviour and made good use of Chrome Developer Tools to help solve positioning problems. At end of day checked Heroku app and all working as expected.
+<summary>26/10/20</summary>
+Added Search form to header and tested in browser. No issues finding correct products or returning no matches. Added sort bar to products page. This did
+not work in the browser. Checked code and noticed syntax errors. Once remedied sort function works. Also created bag app today. Could not get it to calculate
+delivery costs and had to refer to Code Institute tutorials for assistance here. Eventually bag app works and displays fine in browser with correct calculations
+for delivery threshold.
 </details>
 <details>
-<summary>25/9/20</summary>
-<br> Much the same as yesterday, large amount of code and CSS changes today. Any issues were resolved without much problem. Checked all code in validators to ensure I wasn't missing anything. Some stray tags detected which I removed and my Jinga code is showing as an error in the HTML validator but as far as I know this is normal.
+<summary>27/10/20</summary>
+More work on bag app today. Needed further assistance from Code Institute tutorials when coding the context processor. It works fine in browser.
+All basic functionality works such as add/remove and update qunatities etc.. Also added toast notifications. These were not displaying at all initially.
+Checked my code and noticed they were not at the correct folder level in my directory. After adjusting this they work.
 </details>
 <details>
-<summary>26/9/20</summary>
-<br> Happy with core code so today thoroughly checked all functionality several times and all links and buttons several times. No issues.
+<summary>28/10/20</summary>
+Tidied up Toasts with CSS, they look good in the browser now. Basic Checkout app views, templates and Models setup along with Stripe functionality and signals. The forms
+are visible in the browser but need styling.
 </details>
 <details>
-<summary>28/9/20</summary>
-Bug detected when viewing the app on mobile device running Chrome for Android. The Navbar logo is popping out of the navbar into the body element. Was several hours trying to resolve myself and with Code Institute Tutors. This unfortuantely is unresolved. See 'Known Bugs' section below for further details.
+<summary>29/10/20</summary>
+Setup Webhook handlers with assistance from Code Institute tutorials. Had to fix multiple syntax errors before I could get a successful response.
 </details>
 <details>
-<summary>29/9/20</summary>
-One final pass of code through validators and thorough testing of all app functionality before submission. No issues apart from known display issue caught yesterday.
+<summary>30/10/20</summary>
+Created superuser for site to access admin backend. Tidied up some grammatical display errors. A lot of back and forth between the code and the browser
+trying to get the delete function to work but eventually got the code correct. Linter showing errors on the models.py file in the Profiles app.
+Adjusted several typos. Tried another test of delete function from admin side and got a 404 error in the browser:
+"Page not found (404)
+Request Method:	GET
+Request URL:	http://localhost:8000/
+Raised by:	home.views.index
+No Product matches the given query."
+<br>
+This broke the site. I could not navigate to any other pages even after refreshing. 
 </details>
+
+### Click on User/Admin Stories below to view details of manual functionality testing after project completion
 
 ## **Known Bugs**
 When testing the app on my own mobile device I encountered a display issue with the logo in the navbar. It is partially popping out into the body element. I tried to resolve this using CSS media queries. If the app is viewed and resized in Chrome Developer Tools it can be observed that the media queries work and the issue is fixed. However despite saving and commitiing the changes to GitHub and Heroku, the issue is still observable on the mobile device.

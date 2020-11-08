@@ -24,6 +24,10 @@ https://hit-record.herokuapp.com/
 
 https://github.com/menacethedenis/CI_Milestone_4_Denis_Lymer
 
+## **Link to Amazon Web Services A3 storage bucket for static files**
+
+https://s3.console.aws.amazon.com/s3/buckets/hit-record?region=us-west-1&tab=objects
+
 ## **Table of Contents**
 1. [**UX**](#ux)
     - [**User Stories**](#user-stories)
@@ -382,6 +386,12 @@ This was used to ensure the code on my HTML pages were error free.
 ## **CSS validator** - https://jigsaw.w3.org/css-validator/
 This was used to ensure my CSS stylesheet was error free.
 
+## **Flake8** - https://pypi.org/project/flake8/
+This was used to ensure quality code standards were adhered to.
+
+## **JSON Formatter** - https://jsonformatter.org/
+I used this to help code my fixtures files, ensuring there were no errors.
+
 
 # **Deployment**
  This project was fully developed in [GitPod](https://www.gitpod.io/). 
@@ -455,14 +465,15 @@ I would have loved to have far more items on the site but I could not find a sui
 <br>
 
 During final testing for the project i received an email notifying me that my AWS bucket was approaching 
- its monthly free use limit for adding files. It should be fine but if there is any issue at all if you are looking at adding products
- please let me know and I will pay for the usage straight away.
+ its monthly free use limit for adding files. I always use a one-use virtual credit card to signup
+ for these things so I don't get charged by accident. It should be fine but if there is any issue at all 
+ if you are looking at adding products, please let me know and I will pay for the usage straight away.
 
 # **Credits**
 ## **Content**
 
-This app is based heavily on the tutorials from the Code Institute Full Stack Frameworks With Django Module,
-particularly the Boutique Ado project videos.
+This app is based maninly on the tutorials from the Code Institute Full Stack Frameworks With Django Module.
+I have heavily modified the code in these lessons to use in this project.
 
 I also referenced Stack Overflow quite frequently when I was trying to resolve some issues but I did not use any code from there. 
 

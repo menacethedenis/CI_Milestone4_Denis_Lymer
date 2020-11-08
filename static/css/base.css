@@ -458,6 +458,38 @@ input[name='q']::placeholder {
     }
 }
 
+@media (max-width: 560px) {
+    .welcome-header {
+        font-size: 35px;
+    }
+    .info-header {
+        font-size: 20px;
+    }
+    .view-button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .welcome-header {
+        font-size: 25px;
+    }
+    .info-header {
+        font-size: 15px;
+        margin: 0;
+    }
+    .view-btn {
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    .view-btn {
+        display:none;
+    }
+}
+
 /* tablet and larger screen fix for product management display */
 @media (min-width: 992px)
 and (max-device-width: 1270px) {

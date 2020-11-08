@@ -392,6 +392,15 @@ This was used to ensure quality code standards were adhered to.
 ## **JSON Formatter** - https://jsonformatter.org/
 I used this to help code my fixtures files, ensuring there were no errors.
 
+## **Google Developer Tools** - https://developers.google.com/web/tools/chrome-devtools
+This was instrumental in checking progress of the site in a live build and for checking html and css errors.
+
+## **Google Lighthouse** - https://developers.google.com/web/tools/lighthouse
+This was used as a further quality checking tool for the finished site.
+
+## **TempMail** - https://temp-mail.org/
+This was used to check autmated Django email functionality was working as expected.
+
 
 # **Deployment**
  This project was fully developed in [GitPod](https://www.gitpod.io/). 
@@ -486,9 +495,9 @@ Slack channels and Github. No code was reused, I was just trying to get a feel o
 the complexity expected.
 
 <br>
-The turntable image used on the main page background was sourced via google images and is open-source.
+The turntable image used on the main page background was sourced via [Google Images](http://google.com/imghp?hl=EN), and is open-source.
 The images for the product items were also sourced via google images and the websites: 
-bestbuy.com, evilgreed.net and discogs.com
+[bestbuy.com](http://bestbuy.com), [Evil Greed](http://evilgreed.net) and [Discogs](http://www.discogs.com)
 
 ## **Acknowledgements**
 I would like to thank the tutors at the Code Institute and my mentor Spencer Barriball for their outstanding support, patience, advice and encouragement.

@@ -90,23 +90,75 @@ Setup Webhook handlers with assistance from Code Institute tutorials. Had to fix
 <summary>30/10/20</summary>
 Created superuser for site to access admin backend. Tidied up some grammatical display errors. A lot of back and forth between the code and the browser
 trying to get the delete function to work but eventually got the code correct. Linter showing errors on the models.py file in the Profiles app.
-Adjusted several typos. Tried another test of delete function from admin side and got a 404 error in the browser:
-"Page not found (404)
-Request Method:	GET
-Request URL:	http://localhost:8000/
-Raised by:	home.views.index
-No Product matches the given query."
-<br>
-This broke the site. I could not navigate to any other pages even after refreshing. 
+Adjusted several typos. Tried another test of delete function from admin side and got a 404 error in the browser. This is documented further in the Known Bugs
+section.
+</details>
+<details>
+<summary>31/10/20</summary>
+Setup Heroku database, app and Amazon Webs Services bucket. Test pushes to all were successful. Set sensitive information to environmental variables in Gitpod
+and Config Variables in Heroku. No issues when tested. Noticed several display issues on site when checking responsiveness on Google Dev Tools.
+Fixed and adjusted with HTML and CSS stylings. Did some regression testing on Stripe functionality, checked Webhooks, all returned successfully.
+Setup automated email via Django and linked to my own gmail account. Hid sensitive info with environmental variables. Tested functionality with
+TempMail and was successfully able to create a new user and verify their email address with temporary mail account.
+</details>
+
+<details>
+<summary>2/11/20</summary>
+Major Flake8 error tidy up today. Some syntax, indentation, whitespace, expected lines and line too long errors were all fixed.
+Did a quick regression test of the site to check I had inadvertently changed anything and discovered that the AllAuth password validation
+functionality was throwing an error. I couldn't spot any errors in the settings.py file so I checked Stack Overflow. Discovered that I shouldn't use '\' to
+bump to next line when tidyng some code, I needed to use '+'.
+So I changed this:
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation. /
+                UserAttributeSimilarityValidator',
+    },
+To this:
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.' +
+                'UserAttributeSimilarityValidator',
+    },
+
+and everyting worked as expected.
+</details>
+<details>
+<summary>3/11/20</summary>
+Created new custom models for Turntables & Headphones. COmpleted entire process for adding/deleting products to and from store and all worked fine.
+</details>
+<details>
+<summary>4/11/20</summary>
+Noticed search function was not returning Turntable or Headphone models eben though they were displaying when navigated to via the relevant categories.
+Could not figure this out so checked with Code Institute tutors. They advised this would be far too complex an issue to resolve for this project and
+I should go back to just using the Products model for store items. Had updated a lot of HTM and CSS stylings in the meantime so instead of rolling back
+the project to an earlier commit. I deleted the 2 models entirely from the project and moved on.
+</details>
+<details>
+<summary>5/11/20</summary>
+Full site functionality regression test to ensure nothing had changed after changing the models yesterday. No issues. Major styling updates sitewide via CSS and
+HTML. All displaying well in various browser sizes when checked on Google Devtools.
+</details>
+<details>
+<summary>6/11/20</summary>
+Removed placeholder images and imported correct ones. Added more products and categories via JSON fixtures. All displaying fine.
+Another full test of site functionality. No issues.
+</details>
+<details>
+<summary>7/11/20</summary>
+Lighthouse highlighted a button display error I had not previously noticed. Fixed it with CSS and HTML.
+</details>
+<details>
+<summary>8/11/20</summary>
+Full site functionality test revealed some display issues on Allauth templates. These were easily remedied via CSS and HTML.
 </details>
 
 ### Click on User/Admin Stories below to view details of manual functionality testing after project completion
 
 ## **Known Bugs**
-When testing the app on my own mobile device I encountered a display issue with the logo in the navbar. It is partially popping out into the body element. I tried to resolve this using CSS media queries. If the app is viewed and resized in Chrome Developer Tools it can be observed that the media queries work and the issue is fixed. However despite saving and commitiing the changes to GitHub and Heroku, the issue is still observable on the mobile device.
-<br> I was several hours online with the Code Institute tutors trying to resolve this. Four different tutors looked at the issue with me but a resolution was not found. The most likely cause is a bug with Materialize itself when interacting with Chrome. I was told by the tutors to log it as a bug in my documentation and explain it for the assessor.
 
-<details><summary>Bug Screenshot</summary>
-
-![bugscreenshot](https://user-images.githubusercontent.com/48594804/94626660-73cabc80-02b3-11eb-914d-2489dc597e77.PNG)
-</details>
+"Page not found (404)
+Request Method:	GET
+Request URL:	http://localhost:8000/
+Raised by:	home.views.index
+No Product matches the given query."

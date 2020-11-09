@@ -152,93 +152,109 @@ Lighthouse highlighted a button display error I had not previously noticed. Fixe
 <summary>8/11/20</summary>
 Full site functionality test revealed some display issues on Allauth templates. These were easily remedied via CSS and HTML.
 Fixed some display issues on smaller screens. Grammar and spelling check on README and TESTS markdown files.
-Ran all HTML and CSS files through validators.
-Final full site test via User/Admin stories - documented in follwoing section.
+Ran all HTML and CSS files through validators. HTML errors all related to Jinja templating. Some CSS erros flagged by validator and fixed.
+Final full site test via User/Admin stories - documented in following section.
 </details>
 
 ### Click on User/Admin Stories below to view details of manual functionality testing after project completion
-#### **User**
+Site was tested in the Chrome and Microsoft edge browsers on a laptop running Windows 10, and Chrome app on a Huawei Mate-10 mobile device
+running Android 10.
+#### **User perspective testing**
 <details>
 <summary>As a user I want to be able to purchase my favourite music in various formats.</summary>
-
+Checked all music categories via the links in navbar and searched for some. All results returned and displayed without issue.
+Also checked other categories and products. No bugs found.
 </details>
 <details>
 <summary>As a user I want to see new releases I may not be aware of.</summary>
-
+Clicked the new arrivals link on the navbar, returned all products in the New Arrivals category without issue.
 </details>
 <details>
 <summary>As a user I want to be able to edit or delete items or quantities in a shopping bag.</summary>
-
+Added several items from different categories to bag, incremented and decremented quantities and removed items.
+Noticed toasts were appearing twice. Double-checked code and all looked fine. Cleared cache and hard refreshed the page.
+This resolved the issue. Tried this process 4 more times to be sure. No issues.
 </details>
 <details>
 <summary>As a user I want to be able to save my user profile for ease of purchase in the future.</summary>
-
+Was able to successfuly create a profile at the checkout stage.
 </details>
 <details>
 <summary>As a user I want a secure checkout experience.</summary>
-
+tested completing order using stripe secure test card number. No issues.
 </details>
 <details>
 <summary>As a user I want an easy to navigate site.</summary>
-
+Checked all links in navbar, all buttons on all pages, used back and forward page arrows on browser.
+No issues.
 </details>
 <details>
 <summary>As a user I want a good experience on different device sizes.</summary>
-
+Checked views and functionality using the responsive setting on Devtools. All looks good.
+Checked all the above on my own mobile device. No issues.
 </details>
 <details>
 <summary>As a user I want to see more info/details about a product if I want them.</summary>
-
+Clicking on a product navigates to product details screen displaying more info successfully.
 </details>
 <details>
 <summary>As a user I want to be able to see my previous order history.</summary>
-
+Logged out and back in again. Navigated to My Account > My Profile and order history is displayed
+as expected. Clicking on Order Number navigates to order confirmation details as expected.
 </details>
 <details>
 <summary>As a user I want to be able to edit or update my user settings and address information.</summary>
-
+Changed several fields and saved. No issues.
 </details>
 <details>
 <summary>As a user I want to be able to browse and/or purchase without having to register or save my personal details.</summary>
-
+Checked all sites links and buttons both logged in and out as a user. No issues.
 </details>
 <details>
 <summary>As a user I want to easily view a running subtotal of my purchases.</summary>
-
+Added several items to bag. After adding each item, checked bag total and it was updating successfully.
 </details>
 <details>
 <summary>As a user I want to know if I qualify for free delivery or how much I need to spend to do so.</summary>
-
+Added one low-price item to bag. Toast notification and bag page both displayed correct delta to achieve
+free delivery threshold.
 </details>
 <details>
 <summary>As a user I want to be able to login/logout of my account easily.</summary>
-
+Checked login and logout functions thoroughly. No issues.
 </details>
 
-#### **Admin**
+#### **Admin perspective testing**
 <details>
 <summary>As an admin I want to be able to login from anywhere on the site.</summary>
-
+No issues logging in with admin credentials from any page. Additional admin Product Management option in
+My Account menu displaying as expected.
 </details>
 <details>
 <summary>As an admin I want to be able to edit or delete items from the site.</summary>
-
+Tried to add new product, enterted URL with tooo many characters to confirm error toast appears.
+It appeared as expected. Corrected URL and product added successfully. Clicked edit on same product,
+added image manually and changed category and description fields. Product updated successfully.
+Clicked delete button on same product. Product was removed successfully. All functionality
+and toast notifications working as expected.
 </details>
 <details>
 <summary>As an admin I want to be able to add new items to the site easily.</summary>
-
+See above
 </details>
 <details>
 <summary>As an admin I want to change the categories of products like New Arrivals or Clearance.</summary>
-
+Clicked on product in New arrival category. Clicked edit. Changed category and clicked save. Change
+was successful.
 </details>
 <details>
 <summary>As an admin I want to be able to view the registered site users.</summary>
-
+navigated to the admin backend [Hit Record](https://hit-record.herokuapp.com/admin)
+Clicked Users and observed all previously created test user profiles were present.
 </details>
 <details>
 <summary>As an admin I want to be able to add, edit or delete other users.</summary>
-
+Clicking on a user allowed functionality to edit, delete or change permissions etc.
 </details>
 
 ## **Known Bugs**

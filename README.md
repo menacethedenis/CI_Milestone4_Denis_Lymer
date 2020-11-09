@@ -200,6 +200,7 @@ I focused on mobile first design, then tablet and larger desktop layouts.
  logged in or out, or is a superuser/admin. The header also contains the navbar which is the heart of the site.
  It displays the different product categories and each will dropdown to further options where applicable. When an 
  option is clicked, a forloop in the backend will pull the relevant categories and the results display in a new page.
+ The navbar collapses to a hamburger icon on smaller screens.
  The bottom of the header features a notification regarding free delivery.
 
 * Feature 2: Welcome card - I opted to put the welcome message on a bootstrap card which is very slightly opaque so

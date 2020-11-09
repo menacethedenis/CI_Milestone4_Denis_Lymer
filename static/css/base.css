@@ -68,7 +68,6 @@ a.category-badge > span.badge:hover {
 
 .details-name {
     font-size: 30px;
-    text-emphasis: bold;
     text-shadow: .35px .35px rgb(226, 243, 243);
 }
 
@@ -399,7 +398,7 @@ input[name='q']::placeholder {
     .nav-link {
         padding: 0.15rem;
         margin: 0;
-        text: center;
+        text-align: center;
     }
 
     .nav-link i.fa-lg {
@@ -491,8 +490,7 @@ input[name='q']::placeholder {
 }
 
 /* tablet and larger screen fix for product management display */
-@media (min-width: 992px)
-and (max-device-width: 1270px) {
+@media (min-width: 992px) and (max-width: 1270px) {
     .spacer {
         padding-top: 7em;
     }

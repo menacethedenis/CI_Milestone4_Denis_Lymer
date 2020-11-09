@@ -152,6 +152,7 @@ Lighthouse highlighted a button display error I had not previously noticed. Fixe
 <summary>8/11/20</summary>
 Full site functionality test revealed some display issues on Allauth templates. These were easily remedied via CSS and HTML.
 Fixed some display issues on smaller screens. Grammar and spelling check on README and TESTS markdown files.
+Ran all HTML and CSS files through validators.
 Final full site test via User/Admin stories - documented in follwoing section.
 </details>
 

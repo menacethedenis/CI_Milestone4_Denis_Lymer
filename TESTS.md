@@ -151,14 +151,109 @@ Lighthouse highlighted a button display error I had not previously noticed. Fixe
 <details>
 <summary>8/11/20</summary>
 Full site functionality test revealed some display issues on Allauth templates. These were easily remedied via CSS and HTML.
+Fixed some display issues on smaller screens. Grammar and spelling check on README and TESTS markdown files.
+Final full site test via User/Admin stories - documented in follwoing section.
 </details>
 
 ### Click on User/Admin Stories below to view details of manual functionality testing after project completion
+#### **User**
+<details>
+<summary>As a user I want to be able to purchase my favourite music in various formats.</summary>
+
+</details>
+<details>
+<summary>As a user I want to see new releases I may not be aware of.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to edit or delete items or quantities in a shopping bag.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to save my user profile for ease of purchase in the future.</summary>
+
+</details>
+<details>
+<summary>As a user I want a secure checkout experience.</summary>
+
+</details>
+<details>
+<summary>As a user I want an easy to navigate site.</summary>
+
+</details>
+<details>
+<summary>As a user I want a good experience on different device sizes.</summary>
+
+</details>
+<details>
+<summary>As a user I want to see more info/details about a product if I want them.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to see my previous order history.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to edit or update my user settings and address information.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to browse and/or purchase without having to register or save my personal details.</summary>
+
+</details>
+<details>
+<summary>As a user I want to easily view a running subtotal of my purchases.</summary>
+
+</details>
+<details>
+<summary>As a user I want to know if I qualify for free delivery or how much I need to spend to do so.</summary>
+
+</details>
+<details>
+<summary>As a user I want to be able to login/logout of my account easily.</summary>
+
+</details>
+
+#### **Admin**
+<details>
+<summary>As an admin I want to be able to login from anywhere on the site.</summary>
+
+</details>
+<details>
+<summary>As an admin I want to be able to edit or delete items from the site.</summary>
+
+</details>
+<details>
+<summary>As an admin I want to be able to add new items to the site easily.</summary>
+
+</details>
+<details>
+<summary>As an admin I want to change the categories of products like New Arrivals or Clearance.</summary>
+
+</details>
+<details>
+<summary>As an admin I want to be able to view the registered site users.</summary>
+
+</details>
+<details>
+<summary>As an admin I want to be able to add, edit or delete other users.</summary>
+
+</details>
 
 ## **Known Bugs**
+Observed on Chrome browser running on Windows 10.
+Sometimes when logged into the site as an admin, using the delete button under a product to remove it from the site
+throws the following error:
 
 "Page not found (404)
 Request Method:	GET
 Request URL:	http://localhost:8000/
 Raised by:	home.views.index
 No Product matches the given query."
+
+Any attempt to refresh the page or navigate to a different page also produces the error. It is impossible to reload the site
+in the standard browser but it runs without issue in incognitio mode. This happened several times throughout development of the project
+and was extremely frustrating. Trying the empty cache and hard reset function in Developer tools did not remedy it, the only way
+I could get the site to run again in the standard browser was to completely clear the cache and all cookies from the previous week in
+advanced chrome settings, stop my Gitpod workspace and log out of it and every other site I was logged into,
+close all browser windows and open a fresh session.

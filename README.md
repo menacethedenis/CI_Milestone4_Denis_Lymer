@@ -452,9 +452,9 @@ python3 manage.py runserver
 
 # **Notes For Assessor**
 ## **I will remove this section after project has been graded**
-I have created a superuser so you can view the admin side of the site. The details are:
- Username: admin1
- Password: 5kUWVtRVeQdeQuz
+I have created a superuser so you can view the admin side of the site. The details were supplied
+during the project submission process on the Code Institute website but feel free to contact me if
+there are any issues.
 <br>
 
 I noticed in the requirements section of the project outline on Code Institute website that it
